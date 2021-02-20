@@ -111,3 +111,4 @@ C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowPr
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.csproj.CopyComplete
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.pdb
+C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.csprojAssemblyReference.cache

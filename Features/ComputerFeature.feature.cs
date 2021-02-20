@@ -160,10 +160,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I navigate to Computers page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 17
- testRunner.When("I click on ACE from list of elements computer Names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on APEXC from list of elements computer Names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 18
- testRunner.Then("I verify element name value equals to ACE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I verify element name value equals to APEXC", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 19
  testRunner.When("I enter text space on the element name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -397,10 +397,10 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("I navigate to Computers page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 64
- testRunner.When("I click on ACE from list of elements computer Names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click on ARRA from list of elements computer Names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 65
- testRunner.Then("I verify element name value equals to ACE", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I verify element name value equals to ARRA", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 66
  testRunner.When("I enter text ACE-Update on the element name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

@@ -20,10 +20,6 @@ namespace SpecFlowProject1.Pages
 
         public static void AddAllPages()
         {
-            pagesStorage.Add("Mens Tennis Shoe", new MensTennisShoePage());
-            pagesStorage.Add("Mens Running Shoe", new MenRunningShoePage());
-            pagesStorage.Add("Shoe1", new Shoe1Page());
-            pagesStorage.Add("Shoe2", new Shoe2Page());
             pagesStorage.Add("Computers", new ComputersPage());
             pagesStorage.Add("Add New Computers", new AddNewComputerPage());
             pagesStorage.Add("Alert Page", new AlertPage());

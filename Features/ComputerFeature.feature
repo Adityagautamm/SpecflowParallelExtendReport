@@ -14,8 +14,8 @@ Scenario: Update computer
 @comp
 Scenario: Update computer with empty string
 	Given I navigate to Computers page
-	When I click on ACE from list of elements computer Names
-	Then I verify element name value equals to ACE
+	When I click on APEXC from list of elements computer Names
+	Then I verify element name value equals to APEXC
 	When I enter text space on the element name
 	And I click on save element
 	Then I verify element fail message text equals to Failed to refine type : Predicate isEmpty() did not fail.
@@ -61,8 +61,8 @@ Scenario: Update computer with introduced date with right format
 @comp
 Scenario: Update computer with discontinued date with right format
 	Given I navigate to Computers page
-	When I click on ACE from list of elements computer Names
-	Then I verify element name value equals to ACE
+	When I click on ARRA from list of elements computer Names
+	Then I verify element name value equals to ARRA
 	When I enter text ACE-Update on the element name
 	And I enter text 2008-02-20 on the element discontinued
 	And I click on save element
