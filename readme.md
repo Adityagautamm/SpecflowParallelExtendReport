@@ -2,4 +2,6 @@ Project: Please load the project and run the tests with tag @comp, it represents
 
 Test cases: Please refer Feature/ComputerFeature and Feature/AlertFeature file for Test case written using specflow.
 
+Report: index.html (Extent report)
+
 Time taken: around 4 hours 
