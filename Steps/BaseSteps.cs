@@ -43,6 +43,7 @@ namespace SpecFlowProject1.Steps
             Type type = allPages.GetType();
             var property = type.GetProperty(elementName);
             var propertType = property.PropertyType;
+            var waitElement = fluentWait.Until(driver => property.GetValue(allPages));
             var propertyValue = property.GetValue(allPages);
 
             if (propertType == typeof(IWebElement))
@@ -57,6 +58,62 @@ namespace SpecFlowProject1.Steps
             }
 
         }
+
+        public static IList<IWebElement> GetWebElements(string elementName)
+        {
+            // removing White spaces from Page Name
+            elementName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(elementName);
+            elementName = Regex.Replace(elementName, @"\s+", string.Empty);
+
+            AllPageBase allPages = GetObject();
+            Type type = allPages.GetType();
+            var property = type.GetProperty(elementName);
+            var propertType = property.PropertyType;
+            var propertyValue = property.GetValue(allPages);
+
+            if (propertType == typeof(IList<IWebElement>))
+            {
+                //scrollToElement(propertyValue as IWebElement);
+                return propertyValue as IList<IWebElement>;
+            }
+
+            else
+            {
+                return null;
+            }
+
+        }
+
+
+        public static IWebElement ExtractWebElementFromElements(IList<IWebElement> elementsList, string text)
+        {
+            IWebElement returnELement = null;
+            bool notifier = false;
+
+            foreach (IWebElement element in elementsList)
+            {
+
+                if (element.Text.Equals(text))
+                {
+                    returnELement = element;
+                    notifier = true;
+                    break;
+                }
+            
+            }
+            if (notifier)
+            {
+                return returnELement;
+            }
+            else
+            {
+                throw new Exception("Element not found");
+            }
+        
+        
+        }
+
+
 
         // Get URL variable of currect page as per the object we set
         public static string GetStoredPageUrl()
@@ -100,6 +157,7 @@ namespace SpecFlowProject1.Steps
         public static void SendInfoToELement(IWebElement webElement, string info)
         {
             IWebElement waitedElement = fluentWait.Until(driver => webElement);
+            waitedElement.Clear();
             waitedElement.SendKeys(info);
         }
 
@@ -108,6 +166,12 @@ namespace SpecFlowProject1.Steps
         {
             IWebElement waitedElement = fluentWait.Until(driver => webElement);
             return waitedElement.Text;
+        }
+        //Read element text
+        public static string ReadELementValue(IWebElement webElement)
+        {
+            IWebElement waitedElement = fluentWait.Until(driver => webElement);
+            return waitedElement.GetAttribute("value");
         }
 
         //Gets current URL

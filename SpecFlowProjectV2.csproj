@@ -46,6 +46,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Features\AlertFeature.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AlertFeature.feature</DependentUpon>
+    </Compile>
     <Compile Update="Features\FeatureB.feature.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -66,6 +71,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\AlertFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AlertFeature.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
     <SpecFlowFeatureFiles Update="Features\FeatureB.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FeatureB.feature.cs</LastGenOutput>

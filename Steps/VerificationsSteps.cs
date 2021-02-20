@@ -1,12 +1,13 @@
 ﻿
 using NUnit.Framework;
 using OpenQA.Selenium;
+using SpecFlowProject1.Pages;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowProject1.Steps
 {
     [Binding]
-    class VerificationsSteps
+    class VerificationsSteps : AllPageBase
     {
 
         private readonly ScenarioContext _scenarioContext;
@@ -41,6 +42,27 @@ namespace SpecFlowProject1.Steps
 
             Assert.IsTrue(storedUrl.Contains(currentPageUrl));
         }
+
+
+        [Then(@"I verify element (.*) text equals to (.*)")]
+        public void ThenIVerifyElementTextEqualsTo(string elementName, string text)
+        {
+            // Getting the element
+            IWebElement element = BaseSteps.GetWebElement(elementName);
+            string elementValue = BaseSteps.ReadELement(element);
+            Assert.IsTrue(elementValue.Contains(text));
+        }
+
+        [Then(@"I verify element (.*) value equals to (.*)")]
+        public void ThenIVerifyElementNameValueEqualsTo(string elementName, string text)
+        {
+            // Getting the element
+            IWebElement element = BaseSteps.GetWebElement(elementName);
+            string elementValue = BaseSteps.ReadELementValue(element);
+            Assert.IsTrue(elementValue.Contains(text));
+        }
+
+
 
     }
 }

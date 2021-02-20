@@ -1,6 +1,3 @@
-C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.dll.config
-C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.AssemblyInfoInputs.cache
-C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.AssemblyInfo.cs
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\NUnit3.TestAdapter.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\NUnit3.TestAdapter.pdb
@@ -108,6 +105,9 @@ C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\System.Tex
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\System.Threading.Tasks.Extensions.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\System.ValueTuple.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\bin\Debug\net48\Utf8Json.dll
+C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.dll.config
+C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.AssemblyInfoInputs.cache
+C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.AssemblyInfo.cs
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.csproj.CopyComplete
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.dll
 C:\Users\Aditya Gautam\source\repos\SpecflowProjectV2\obj\Debug\net48\SpecFlowProjectV2.pdb
